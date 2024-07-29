@@ -1,0 +1,399 @@
+/* Base Styles */
+html, body {
+    font-family: 'Open Sans', sans-serif;
+    background-color: #f9f9f9;
+    margin: 0;
+    padding: 0;
+    color: #2e3d49;
+}
+
+.page-header {
+    text-align: center;
+    padding: 20px;
+    color: #fff;
+    background-image: url('../img/headerimage1.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+.page-header h1 {
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    text-shadow: 2px 2px 4px #000;
+}
+
+.header-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.logo {
+    max-height: 50px;
+}
+
+.header-icons {
+    display: flex;
+    align-items: center;
+}
+
+.notification-bell {
+    position: relative;
+    margin-right: 20px;
+}
+
+.notification-bell img {
+    height: 30px;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    top: 40px;
+    right: 0;
+    background-color: #fff;
+    border: 1px solid #dbe2e8;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    padding: 10px;
+    z-index: 1000;
+}
+
+.notification-bell:hover .dropdown-content {
+    display: block;
+}
+
+.help-center {
+    position: relative;
+}
+
+.help-center img {
+    height: 30px;
+}
+
+.help-dropdown-content {
+    display: none;
+    position: absolute;
+    top: 40px;
+    right: 0;
+    background-color: #fff;
+    border: 1px solid #dbe2e8;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    padding: 10px;
+    z-index: 1000;
+}
+
+.help-center:hover .help-dropdown-content {
+    display: block;
+}
+
+.help-dropdown-content h3 {
+    margin-top: 0;
+}
+
+.help-dropdown-content ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.help-dropdown-content li {
+    margin: 5px 0;
+}
+
+/* Navbar Styling */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #ffffff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 50px;
+}
+
+.navbar-menu {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+.navbar-menu li {
+    margin: 0 15px;
+}
+
+.navbar-menu a {
+    text-decoration: none;
+    color: #2e3d49;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.navbar-menu a:hover {
+    color: #028a80;
+}
+
+/* Search Form Styling */
+.search-form {
+    display: flex;
+    align-items: center;
+}
+
+.search-input {
+    border: 1px solid #dbe2e8;
+    padding: 5px;
+    border-radius: 4px;
+    width: 200px;
+    margin-right: 10px;
+}
+
+.search-button {
+    background-color: #02ccba;
+    border: none;
+    color: white;
+    padding: 5px 15px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.search-button:hover {
+    background-color: #028a80;
+}
+
+/* Carousel Styles */
+.container {
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 0 10px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.carousel {
+    position: relative;
+    flex: 3;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+}
+
+.carousel-inner {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.carousel-item {
+    min-width: 33.33%;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.carousel-item img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+    margin-bottom: 15px;
+}
+
+.carousel-item h3 {
+    margin: 0 0 10px;
+    font-size: 1.5em;
+}
+
+.carousel-item p {
+    font-size: 1em;
+    color: #333;
+}
+
+.read-more {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 10px 15px;
+    background-color: #028a80;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.read-more:hover {
+    background-color: #026b64;
+}
+
+/* Carousel Navigation */
+.prev, .next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 2em;
+    color: #028a80;
+    background-color: rgba(255, 255, 255, 0.8);
+    border: none;
+    cursor: pointer;
+    border-radius: 50%;
+    padding: 10px;
+}
+
+.prev {
+    left: 10px;
+}
+
+.next {
+    right: 10px;
+}
+
+.carousel-indicators {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.indicator {
+    display: inline-block;
+    margin: 0 5px;
+    width: 15px;
+    height: 15px;
+    background-color: #ccc;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.indicator.active {
+    background-color: #028a80;
+}
+
+/* Issues Section Styling */
+.issues-section {
+    flex: 1;
+    margin-right: 20px;
+    padding: 20px;
+    border: 1px solid #dbe2e8;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+}
+
+.issues-section h2 {
+    font-size: 1.5em;
+    margin-top: 0;
+}
+
+.issue-item {
+    margin-bottom: 20px;
+}
+
+.issue-item h3 {
+    font-size: 1.2em;
+    margin: 0;
+}
+
+.dropdown-content {
+    display: none;
+    list-style: none;
+    padding: 0;
+    margin: 10px 0 0;
+}
+
+.issue-item:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown-content a {
+    display: block;
+    padding: 5px;
+    color: #028a80;
+    text-decoration: none;
+}
+
+.dropdown-content a:hover {
+    background-color: #f0f4f8;
+}
+
+/* Sidebar Styling */
+.sidebar {
+    flex: 2;
+    margin: 10px;
+    padding: 20px;
+    border: 1px solid #dbe2e8;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+}
+
+.sidebar-text h2 {
+    font-size: 1.5em;
+}
+
+.sidebar-text p {
+    line-height: 1.5;
+}
+
+.sidebar-text .social-link {
+    margin-right: 10px;
+}
+
+.sidebar-text .social-link img {
+    max-width: 32px;
+}
+
+/* Footer Styling */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #f0f4f8;
+    margin-top: 20px;
+    border-top: 1px solid #dbe2e8;
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+    .navbar-menu {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .navbar-menu li {
+        margin-bottom: 10px;
+    }
+
+    .navbar-menu li:last-child {
+        margin-bottom: 0;
+    }
+
+    .issues-section {
+        margin: 10px 0;
+    }
+}
+
+@media (max-width: 480px) {
+    .navbar {
+        flex-direction: column;
+    }
+
+    .search-form {
+        margin-top: 10px;
+    }
+
+    .search-input {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    .carousel-item {
+        min-width: 100%;
+    }
+
+    .prev, .next {
+        font-size: 1.5em;
+    }
+}

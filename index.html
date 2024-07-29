@@ -1,0 +1,167 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>HarborHaven</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/normalize.min.css">
+    <link rel="stylesheet" href="css/app.css">
+</head>
+<body>
+    <header class="page-header">
+        <div class="header-content">
+            <img src="img/HarborHaven.png" alt="HarborHaven Logo" class="logo">
+            <h1>HarborHaven</h1>
+            <div class="header-icons">
+                <div class="notification-bell">
+                    <img src="img/notification_bell.png" alt="Notification Bell">
+                    <div class="dropdown-content">
+                        <a href="#">Emergency Alert</a>
+                        <a href="#">Normal Alert</a>
+                    </div>
+                </div>
+                <div class="help-center">
+                    <img src="img/help_center.png" alt="Help Center">
+                    <div class="help-dropdown-content">
+                        <h3>Help Center</h3>
+                        <ul>
+                            <li>What is HarborHaven?</li>
+                            <li>How to report an issue?</li>
+                            <li>What support is available?</li>
+                            <li>How to manage stress?</li>
+                            <li>Privacy and confidentiality</li>
+                            <li>How to contact us?</li>
+                            <li>What resources are available?</li>
+                            <li>How to get involved?</li>
+                            <li>Technical support</li>
+                            <li>Feedback and suggestions</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <nav class="navbar">
+            <ul class="navbar-menu">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#contact">Contact Us</a></li>
+                <li><a href="#report">Report</a></li>
+            </ul>
+            <form class="search-form" id="searchForm" onsubmit="searchArticles(event)">
+                <input type="text" name="q" id="searchInput" class="search-input" placeholder="Search articles..." onkeyup="searchArticles(event)">
+                <button type="submit" class="search-button">Search</button>
+            </form>
+        </nav>
+    </header>
+
+    <div class="container">
+        <aside class="issues-section">
+            <h2>Issues</h2>
+            <div class="issue-item">
+                <h3>Peer Pressure</h3>
+                <div class="dropdown-content">
+                    <a href="#">Exams</a>
+                    <a href="#">Partiality</a>
+                    <a href="#">Others</a>
+                </div>
+            </div>
+            <div class="issue-item">
+                <h3>Mental Wellness</h3>
+                <div class="dropdown-content">
+                    <a href="#">Stress Management</a>
+                    <a href="#">Anxiety</a>
+                    <a href="#">Depression</a>
+                </div>
+            </div>
+            <div class="issue-item">
+                <h3>Violence/Harassment</h3>
+                <div class="dropdown-content">
+                    <a href="#">Physical Harassment</a>
+                    <a href="#">Bullying</a>
+                    <a href="#">Cyberbullying</a>
+                </div>
+            </div>
+        </aside>
+
+        <div class="carousel">
+            <button class="prev" onclick="changeSlide(-1)">&#10094;</button>
+            <div class="carousel-inner">
+                <article class="carousel-item">
+                    <h3>Mental Wellness</h3>
+                    <img src="img/mental_wellness.jpg" alt="Mental Wellness">
+                    <p>Article on managing stress, dealing with anxiety, understanding depression, and tips for maintaining mental well-being.</p>
+                    <a class="read-more" href="#">Read more</a>
+                </article>
+                <article class="carousel-item">
+                    <h3>The Power of Peer Support</h3>
+                    <img src="img/peer_support.jpg" alt="Peer Support">
+                    <p>The importance of building a support network, how to be a good friend, and the benefits of peer counseling.</p>
+                    <a class="read-more" href="#">Read more</a>
+                </article>
+                <article class="carousel-item">
+                    <h3>Standing Up Against Bullying</h3>
+                    <img src="img/bully.jpg" alt="Standing Up Against Bullying">
+                    <p>Information on recognizing bullying and harassment, how to respond, and resources available for help.</p>
+                    <a class="read-more" href="#">Read more</a>
+                </article>
+                <article class="carousel-item">
+                    <h3>Navigating Academic Challenges</h3>
+                    <img src="img/Academic_Challenges.jpg" alt="Navigating Academic Challenges">
+                    <p>Tips for studying effectively, managing time, and dealing with academic pressure.</p>
+                    <a class="read-more" href="#">Read more</a>
+                </article>
+                <article class="carousel-item">
+                    <h3>Journey to Self-Improvement</h3>
+                    <img src="img/self_improvement.jpg" alt="Journey to Self-Improvement">
+                    <p>Articles on personal growth, setting goals, and building self-confidence.</p>
+                    <a class="read-more" href="#">Read more</a>
+                </article>
+                <article class="carousel-item">
+                    <h3>Living a Balanced Lifestyle</h3>
+                    <img src="img/life_balance.jpg" alt="Living a Balanced Lifestyle">
+                    <p>Topics on maintaining a healthy lifestyle, including diet, exercise, sleep, and work-life balance.</p>
+                    <a class="read-more" href="#">Read more</a>
+                </article>
+                <article class="carousel-item">
+                    <h3>Exploring Creative Outlets</h3>
+                    <img src="img/creative_outlets.jpg" alt="Exploring Creative Outlets">
+                    <p>Encouraging creative activities like writing, painting, music, and more.</p>
+                    <a class="read-more" href="#">Read more</a>
+                </article>
+                <article class="carousel-item">
+                    <h3>Building a Supportive Community</h3>
+                    <img src="img/supportive_community.jpg" alt="Building a Supportive Community">
+                    <p>Information about upcoming events, workshops, and community activities.</p>
+                    <a class="read-more" href="#">Read more</a>
+                </article>
+            </div>
+            <button class="next" onclick="changeSlide(1)">&#10095;</button>
+        </div>
+
+        <aside class="sidebar">
+            <img src="img/HarborHaven.png" alt="HarborHaven logo">
+            <div class="sidebar-text">
+                <h2>About HarborHaven</h2>
+                <p>HarborHaven is a pioneering online platform providing a confidential and supportive environment for students to report concerns and issues affecting their well-being. Our secure framework ensures anonymous reporting, facilitating direct communication with faculty members and mental health professionals. If necessary, parents and law enforcement agencies are alerted, guaranteeing timely intervention. HarborHaven empowers students to prioritize their mental health, cultivating resilience and academic success.</p>
+                <section>
+                    <h3 class="visuallyhidden">Social Links</h3>
+                    <a class="social-link" href="https://twitter.com/udacity">
+                        <img src="img/social-twitter.png" alt="Twitter">
+                    </a>
+                    <a class="social-link" href="https://www.instagram.com/udacity/">
+                        <img src="img/social-instagram.png" alt="Instagram">
+                    </a>
+                    <a class="social-link" href="https://plus.google.com/+Udacity">
+                        <img src="img/social-google.png" alt="Google Plus">
+                    </a>
+                </section>
+            </div>
+        </aside>
+    </div>
+
+    <footer>
+        &copy; 2024 HarborHaven
+    </footer>
+
+    <script src="js/app.js"></script>
+</body>
+</html>
